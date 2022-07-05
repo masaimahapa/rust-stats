@@ -1,3 +1,19 @@
+//! # Rust Stats
+//!
+//! `stats` is a collection of utility functions which make 
+//! performing descriptive statistics easy
+
+
+/// Calculate the mean of a list of number
+///
+/// # Examples
+///
+/// ```
+/// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
+/// let average = stats::mean(&arg);
+///
+/// assert_eq!(3.0, average);
+/// ```
 pub fn mean(numbers: & Vec<f32>) -> f32{
     let numbers_iter = numbers.iter();
     let sum : f32= numbers_iter.sum();
@@ -6,11 +22,31 @@ pub fn mean(numbers: & Vec<f32>) -> f32{
     sum/ length as f32
 }
 
+/// Calculate the standard deviation of a list of numbers
+///
+/// # Examples
+///
+/// ```
+/// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
+/// let standard_dev = stats::std(&arg);
+///
+/// assert_eq!(1.5811388, standard_dev);
+/// ```
 pub fn std(numbers : &Vec<f32>) -> f32{
     let v = variance(&numbers);
     f32::sqrt(v)
 }
 
+/// Calculate the variance from of a list of numbers
+///
+/// # Examples
+///
+/// ```
+/// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
+/// let var = stats::variance(&arg);
+///
+/// assert_eq!(2.5, var);
+/// ```
 pub fn variance(numbers : &Vec<f32>)-> f32{
     let length = numbers.len();
     let mut v: f32 = 0.0;
