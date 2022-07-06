@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "easy-stats"
+name = "easy_stats"
 version = "0.1.0"

@@ -1,6 +1,6 @@
-//! # Rust Stats
+//! #  Easy Stats
 //!
-//! `stats` is a collection of utility functions which make 
+//! `easy_stats` is a collection of utility functions which make 
 //! performing descriptive statistics easy
 
 
@@ -10,7 +10,7 @@
 ///
 /// ```
 /// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
-/// let average = stats::mean(&arg);
+/// let average = easy_stats::mean(&arg);
 ///
 /// assert_eq!(3.0, average);
 /// ```
@@ -28,7 +28,7 @@ pub fn mean(numbers: & Vec<f32>) -> f32{
 ///
 /// ```
 /// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
-/// let standard_dev = stats::std(&arg);
+/// let standard_dev = easy_stats::std(&arg);
 ///
 /// assert_eq!(1.5811388, standard_dev);
 /// ```
@@ -43,7 +43,7 @@ pub fn std(numbers : &Vec<f32>) -> f32{
 ///
 /// ```
 /// let arg = vec![1.0,2.0,3.0,4.0, 5.0];
-/// let var = stats::variance(&arg);
+/// let var = easy_stats::variance(&arg);
 ///
 /// assert_eq!(2.5, var);
 /// ```

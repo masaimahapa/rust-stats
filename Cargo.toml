@@ -1,5 +1,5 @@
 [package]
-name = "easy-stats"
+name = "easy_stats"
 version = "0.1.0"
 edition = "2021"
 description = "A simple rust package to perform basic descriptive stats on a data set."

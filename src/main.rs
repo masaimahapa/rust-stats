@@ -3,12 +3,12 @@ fn main() {
     println!("input : {:?}", digits);
 
     println!("count : {}", digits.len());
-    let mean_number = stats::mean(&digits);
+    let mean_number = easy_stats::mean(&digits);
     println!("mean {}", mean_number);
 
-    let v = stats::variance(&digits);
+    let v = easy_stats::variance(&digits);
     println!("variance {}", v);
 
-    let standard_deviation = stats::std(&digits);
+    let standard_deviation = easy_stats::std(&digits);
     println!("standard deviation {}", standard_deviation);
 }
