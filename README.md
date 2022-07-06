@@ -1,10 +1,17 @@
-# Rust stats
+# Rust easy stats
 
-Rust stats is a library which contains functions that make it easy to perform basic descriptive statistics.
+easy_stats is a library which contains functions that make it easy to perform basic descriptive statistics.
 
 
 ## Usage
-read the docs
+Calculate the mean from a list of numbers:
+
+```rust
+use easy_stats;
+let arg = vec![1.0,2.0,3.0,4.0, 5.0];
+let average = easy_stats::mean(&arg);
+assert_eq!(3.0, average);
+```
 
 
 ## Contributing
