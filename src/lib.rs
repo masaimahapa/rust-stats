@@ -4,7 +4,7 @@
 //! performing descriptive statistics easy
 
 
-/// Calculate the mean of a list of number
+/// Calculate the mean from a list of numbers
 ///
 /// # Examples
 ///

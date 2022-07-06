@@ -1,7 +1,9 @@
 [package]
-name = "stats"
+name = "easy-stats"
 version = "0.1.0"
 edition = "2021"
+description = "A simple rust package to perform basic descriptive stats on a data set."
+license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
